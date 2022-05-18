@@ -58,11 +58,11 @@ module.exports = function webpackConfig(env) {
         {
           test: /\.(jsx|js)$/,
           exclude: /node_modules/,
-          loaders: ['babel-loader']
+          use: ['babel-loader']
         },
         {
           test: /\.(sc|c)ss$/,
-          loaders: [
+          use: [
             'style-loader',
             'css-loader',
             {
@@ -82,7 +82,7 @@ module.exports = function webpackConfig(env) {
         },
         {
           test: /\.md$/,
-          loaders: [
+          use: [
             'html-loader',
             {
               loader: 'markdown-loader',
