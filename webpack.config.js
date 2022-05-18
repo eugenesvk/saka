@@ -11,8 +11,8 @@ const renderer = new marked.Renderer();
 // process.traceDeprecation = true;
 // markdown convert to html
 
-module.exports = function webpackConfig(env) {
-  const [mode, platform, benchmark] = env.target.split(':');
+module.exports = function webpackConfig(env, argv) {
+  const [platform, benchmark] = env.target.split(':');
 
   const config = {
     resolve: {
@@ -137,11 +137,10 @@ module.exports = function webpackConfig(env) {
   //   Use this to provide platform specific features, e.g. use shadow DOM
   //   on chrome but css selectors on firefox and edge for link hint styling
 
-  if (mode === 'prod') {
+  if (argv.mode === 'production') {
     config.plugins = config.plugins.concat([
       new BabiliPlugin(),
       new webpack.DefinePlugin({
-        'process.env.NODE_ENV': JSON.stringify('production'),
         SAKA_DEBUG: JSON.stringify(false),
         SAKA_VERSION: JSON.stringify(version),
         SAKA_PLATFORM: JSON.stringify(platform),
@@ -152,7 +151,6 @@ module.exports = function webpackConfig(env) {
     config.devtool = 'source-map';
     config.plugins = config.plugins.concat([
       new webpack.DefinePlugin({
-        'process.env.NODE_ENV': JSON.stringify('development'),
         SAKA_DEBUG: JSON.stringify(true),
         SAKA_VERSION: JSON.stringify(`${version} dev`),
         SAKA_PLATFORM: JSON.stringify(platform),
