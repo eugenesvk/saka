@@ -98,21 +98,11 @@ module.exports = function webpackConfig(env, argv) {
     },
     plugins: [
       new webpack.optimize.ModuleConcatenationPlugin(),
-      new CopyWebpackPlugin([
-        {
-          from: 'static'
-        },
-        {
-          context: 'src/modes',
-          from: '**/default.json',
-          to: 'default_[folder].json'
-        },
-        {
-          context: 'src/modes',
-          from: '**/config.json',
-          to: 'config_[folder].json'
-        }
-      ]),
+      new CopyWebpackPlugin({ patterns: [
+        {                     from:'static'},
+        // {context:'src/modes', from:'**/default.json', to:'default_[folder].json'},
+        // {context:'src/modes', from:'**/config.json' , to:'config_[folder].json'},
+        ] }),
       new GenerateJsonPlugin(
         'manifest.json',
         merge(
