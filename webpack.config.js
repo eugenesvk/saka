@@ -68,13 +68,15 @@ module.exports = function webpackConfig(env) {
             {
               loader: 'sass-loader',
               options: {
-                importer(url, prev) {
-                  if (url.indexOf('@material') === 0) {
-                    const filePath = url.split('@material')[1];
-                    const nodeModulePath = `./node_modules/@material/${filePath}`;
-                    return { file: path.resolve(nodeModulePath) };
+                sassOptions: {
+                  importer(url, prev) {
+                    if (url.indexOf('@material') === 0) {
+                      const filePath = url.split('@material')[1];
+                      const nodeModulePath = `./node_modules/@material/${filePath}`;
+                      return { file: path.resolve(nodeModulePath) };
+                    }
+                    return { file: url };
                   }
-                  return { file: url };
                 }
               }
             }
