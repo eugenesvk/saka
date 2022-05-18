@@ -12,7 +12,7 @@ const renderer = new marked.Renderer();
 // markdown convert to html
 
 module.exports = function webpackConfig(env) {
-  const [mode, platform, benchmark] = env.split(':');
+  const [mode, platform, benchmark] = env.target.split(':');
 
   const config = {
     resolve: {
