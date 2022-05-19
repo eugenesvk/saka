@@ -60,28 +60,16 @@ module.exports = function webpackConfig(env, argv) {
           exclude: /node_modules/,
           use: ['babel-loader']
         },
-        {
-          test: /\.(sc|c)ss$/,
-          use: [
-            'style-loader',
-            'css-loader',
-            {
-              loader: 'sass-loader',
-              options: {
-                sassOptions: {
-                  importer(url, prev) {
-                    if (url.indexOf('@material') === 0) {
-                      const filePath = url.split('@material')[1];
-                      const nodeModulePath = `./node_modules/@material/${filePath}`;
-                      return { file: path.resolve(nodeModulePath) };
-                    }
-                    return { file: url };
-                  }
-                }
+        { test: /\.css$/i    , use: ['style-loader','css-loader'] },
+        { test: /\.s[ac]ss$/i, use: ['style-loader','css-loader', {loader:'sass-loader',
+          options:{ sassOptions: {
+            importer(url, prev) {
+              if (url.indexOf('@material') === 0) {
+                const filePath = url.split('@material')[1];
+                const nodeModulePath = `./node_modules/@material/${filePath}`;
+                return { file: path.resolve(nodeModulePath) };
               }
-            }
-          ]
-        },
+              return { file: url }; } } } } ] },
         {
           test: /\.md$/,
           use: [
