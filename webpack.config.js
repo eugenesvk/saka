@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-const BabiliPlugin = require('babili-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const GenerateJsonPlugin = require('generate-json-webpack-plugin');
 const marked = require('marked');
@@ -129,7 +129,7 @@ module.exports = function webpackConfig(env, argv) {
 
   if (argv.mode === 'production') {
     config.plugins = config.plugins.concat([
-      new BabiliPlugin(),
+      new TerserPlugin(),
       new webpack.DefinePlugin({
         SAKA_DEBUG: JSON.stringify(false),
         SAKA_VERSION: JSON.stringify(version),
