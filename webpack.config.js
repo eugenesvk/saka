@@ -55,11 +55,7 @@ module.exports = function webpackConfig(env, argv) {
     },
     module: {
       rules: [
-        {
-          test: /\.(jsx|js)$/,
-          exclude: /node_modules/,
-          use: ['babel-loader']
-        },
+        { test:/\.(jsx|js)$/ , use: ['babel-loader'], exclude:/node_modules/ },
         { test: /\.css$/i    , use: ['style-loader','css-loader'] },
         { test: /\.s[ac]ss$/i, use: ['style-loader','css-loader', {loader:'sass-loader',
           options:{ sassOptions: {
@@ -70,18 +66,7 @@ module.exports = function webpackConfig(env, argv) {
                 return { file: path.resolve(nodeModulePath) };
               }
               return { file: url }; } } } } ] },
-        {
-          test: /\.md$/,
-          use: [
-            'html-loader',
-            {
-              loader: 'markdown-loader',
-              options: {
-                renderer
-              }
-            }
-          ]
-        }
+        { test: /\.md$/, use: ['html-loader', {loader:'markdown-loader',options:{renderer}}]}
       ]
     },
     plugins: [
