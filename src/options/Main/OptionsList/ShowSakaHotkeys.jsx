@@ -9,7 +9,7 @@ const ShowSakaHotkeys = function ShowSakaHotkeys({
     <li className="mdc-list-item option">
       <span className="mdc-list-item__text">Saka Hotkeys</span>
       <i
-        className="mdc-list-item__meta mdc-icon-toggle material-icons"
+        className="mdc-list-item__meta mdc-icon-button material-icons"
         role="button"
         aria-pressed="false"
         aria-label="View Saka hotkeys"

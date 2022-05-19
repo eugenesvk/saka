@@ -10,7 +10,7 @@ const SakaHotkeysList = function SakaHotkeysList({
     <div className="saka-hotkey-list">
       <div id="top-bar">
         <i
-          className="mdc-icon-toggle material-icons"
+          className="mdc-icon-button material-icons"
           role="button"
           aria-pressed="false"
           aria-label="Back to Saka settings"
@@ -22,7 +22,7 @@ const SakaHotkeysList = function SakaHotkeysList({
         <div className="tooltip">
           <i
             id="custom-hotkey-info"
-            className="mdc-icon-toggle material-icons"
+            className="mdc-icon-button material-icons"
             aria-pressed="false"
             aria-label="Info about Saka custom hotkeys"
           >
