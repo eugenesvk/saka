@@ -6,7 +6,7 @@ import {
   fireEvent,
   flushPromises
 } from 'preact-testing-library';
-import 'jest-dom/extend-expect';
+import '@testing-library/jest-dom/extend-expect';
 import Main from '@/saka/Main/index.jsx';
 
 beforeEach(() => {
