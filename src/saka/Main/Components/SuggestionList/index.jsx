@@ -11,7 +11,7 @@ export default ({
   maxSuggestions,
   onSuggestionClick
 }) => (
-  <ul className="mdc-list mdc-list--two-line mdc-list--avatar-list two-line-avatar-text-icon-demo list-container">
+  <ul className="mdc-deprecated-list mdc-deprecated-list--two-line mdc-deprecated-list--avatar-list two-line-avatar-text-icon-demo list-container">
     {suggestions
       .slice(firstVisibleIndex, firstVisibleIndex + maxSuggestions)
       .map((suggestion, index) => {

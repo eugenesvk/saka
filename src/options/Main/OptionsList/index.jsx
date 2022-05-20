@@ -73,16 +73,16 @@ export default class OptionsList extends Component {
     if (!this.state.isLoading) {
       return (
         <div className="options-form">
-          <div className="mdc-list-group">
-            <h3 className="mdc-list-group__subheader">General Settings</h3>
-            <ul className="mdc-list mdc-list--non-interactive mdc-list--dense">
+          <div className="mdc-deprecated-list-group">
+            <h3 className="mdc-deprecated-list-group__subheader">General Settings</h3>
+            <ul className="mdc-deprecated-list mdc-deprecated-list--non-interactive mdc-deprecated-list--dense">
               <DefaultModeSelection
                 handleModeChange={this.handleModeChange}
                 mode={this.state.mode}
               />
               <li
                 role="separator"
-                className="mdc-list-divider mdc-list-divider--padded options-separator"
+                className="mdc-deprecated-list-divider mdc-deprecated-list-divider--padded options-separator"
               />
               <OnlyShowSearchBarSelector
                 checked={this.state.showEmptySearchSuggestions}
@@ -92,7 +92,7 @@ export default class OptionsList extends Component {
               />
               <li
                 role="separator"
-                className="mdc-list-divider mdc-list-divider--padded options-separator"
+                className="mdc-deprecated-list-divider mdc-deprecated-list-divider--padded options-separator"
               />
               <EnableFuzzySearch
                 checked={this.state.enableFuzzySearch}
@@ -100,14 +100,14 @@ export default class OptionsList extends Component {
               />
               <li
                 role="separator"
-                className="mdc-list-divider mdc-list-divider--padded options-separator"
+                className="mdc-deprecated-list-divider mdc-deprecated-list-divider--padded options-separator"
               />
               <ShowSakaHotkeys
                 handleOpenSakaKeybindings={handleOpenSakaKeybindings}
               />
               <li
                 role="separator"
-                className="mdc-list-divider mdc-list-divider--padded options-separator"
+                className="mdc-deprecated-list-divider mdc-deprecated-list-divider--padded options-separator"
               />
             </ul>
           </div>

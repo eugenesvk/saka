@@ -8,14 +8,14 @@ const DefaultModeSelection = function DefaultModeSelection({
   handleModeChange
 }) {
   return (
-    <li className="mdc-list-item option">
-      <span className="mdc-list-item__text">
+    <li className="mdc-deprecated-list-item option">
+      <span className="mdc-deprecated-list-item__text">
         Default Mode
-        <span className="mdc-list-item__secondary-text">
+        <span className="mdc-deprecated-list-item__secondary-text">
           Select the default mode Saka opens with
         </span>
       </span>
-      <div className="mdc-select mdc-list-item__meta">
+      <div className="mdc-select mdc-deprecated-list-item__meta">
         <select
           value={mode}
           id="defaultModeSelect"

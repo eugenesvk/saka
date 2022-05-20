@@ -40,63 +40,63 @@ const SakaHotkeysList = function SakaHotkeysList({
           )}
         </div>
       </div>
-      <h3 className="mdc-list-group__subheader">Keyboard Shortcuts</h3>
-      <div className="mdc-list-group">
-        <ul className="mdc-list mdc-list--non-interactive mdc-list--dense">
+      <h3 className="mdc-deprecated-list-group__subheader">Keyboard Shortcuts</h3>
+      <div className="mdc-deprecated-list-group">
+        <ul className="mdc-deprecated-list mdc-deprecated-list--non-interactive mdc-deprecated-list--dense">
           <HotkeyListRow title="Open Saka" keys={[ctrlChar, 'space']} />
-          <li role="separator" className="mdc-list-divider options-separator" />
+          <li role="separator" className="mdc-deprecated-list-divider options-separator" />
           <HotkeyListRow title="Close Saka" keys={['esc']} />
-          <li role="separator" className="mdc-list-divider options-separator" />
+          <li role="separator" className="mdc-deprecated-list-divider options-separator" />
           <HotkeyListRow
             title="Close Saka (when search bar is empty and focused)"
             keys={['← backspace']}
           />
-          <li role="separator" className="mdc-list-divider options-separator" />
+          <li role="separator" className="mdc-deprecated-list-divider options-separator" />
           <HotkeyListRow title="Next Result" keys={['tab']} />
-          <li role="separator" className="mdc-list-divider options-separator" />
+          <li role="separator" className="mdc-deprecated-list-divider options-separator" />
           <HotkeyListRow title="Previous Result" keys={['shift', 'tab']} />
-          <li role="separator" className="mdc-list-divider options-separator" />
+          <li role="separator" className="mdc-deprecated-list-divider options-separator" />
           <HotkeyListRow title="Clear Search" keys={[ctrlChar, 'k']} />
-          <li role="separator" className="mdc-list-divider options-separator" />
+          <li role="separator" className="mdc-deprecated-list-divider options-separator" />
           <HotkeyListRow title="View previous search" keys={[ctrlChar, 'z']} />
-          <li role="separator" className="mdc-list-divider options-separator" />
+          <li role="separator" className="mdc-deprecated-list-divider options-separator" />
           <HotkeyListRow title="View next search" keys={[ctrlChar, 'y']} />
-          <li role="separator" className="mdc-list-divider options-separator" />
+          <li role="separator" className="mdc-deprecated-list-divider options-separator" />
           <HotkeyListRow
             title="Switch to next page of results"
             keys={[ctrlChar, 'd']}
           />
-          <li role="separator" className="mdc-list-divider options-separator" />
+          <li role="separator" className="mdc-deprecated-list-divider options-separator" />
           <HotkeyListRow
             title="Switch To previous page of results"
             keys={[ctrlChar, 's']}
           />
-          <li role="separator" className="mdc-list-divider options-separator" />
+          <li role="separator" className="mdc-deprecated-list-divider options-separator" />
           <HotkeyListRow
             title="Switch Modes (when search bar is empty)"
             keys={['space']}
           />
-          <li role="separator" className="mdc-list-divider options-separator" />
+          <li role="separator" className="mdc-deprecated-list-divider options-separator" />
           <HotkeyListRow
             title="Switch Modes (when search bar not empty) "
             keys={['shift', 'space']}
           />
-          <li role="separator" className="mdc-list-divider options-separator" />
+          <li role="separator" className="mdc-deprecated-list-divider options-separator" />
           <HotkeyListRow
             title="Switch To Tabs Search"
             keys={[ctrlChar, 'shift', 'a']}
           />
-          <li role="separator" className="mdc-list-divider options-separator" />
+          <li role="separator" className="mdc-deprecated-list-divider options-separator" />
           <HotkeyListRow
             title="Switch To Recently Closed Tabs Search"
             keys={[ctrlChar, 'shift', 'c']}
           />
-          <li role="separator" className="mdc-list-divider options-separator" />
+          <li role="separator" className="mdc-deprecated-list-divider options-separator" />
           <HotkeyListRow
             title="Switch To Bookmark Search"
             keys={[ctrlChar, 'b']}
           />
-          <li role="separator" className="mdc-list-divider options-separator" />
+          <li role="separator" className="mdc-deprecated-list-divider options-separator" />
           <HotkeyListRow
             title="Switch To History Search"
             keys={[ctrlChar, 'shift', 'e']}

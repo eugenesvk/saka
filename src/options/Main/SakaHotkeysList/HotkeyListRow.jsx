@@ -10,9 +10,9 @@ const HotkeyListRow = function HotkeyListRow({ title, keys }) {
     </span>
   ));
   return (
-    <li className="mdc-list-item option">
-      <span className="mdc-list-item__text">{title}</span>
-      <div className="mdc-list-item__meta mdc-switch">{hotkeyShortcut}</div>
+    <li className="mdc-deprecated-list-item option">
+      <span className="mdc-deprecated-list-item__text">{title}</span>
+      <div className="mdc-deprecated-list-item__meta mdc-switch">{hotkeyShortcut}</div>
     </li>
   );
 };

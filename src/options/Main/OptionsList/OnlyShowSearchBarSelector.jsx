@@ -3,14 +3,14 @@ import { h } from 'preact';
 const OnlyShowSearchBarSelector = function OnlyShowSearchBarSelector() {
   const { checked, handleShowSearchSuggestionsChange } = this.props;
   return (
-    <li className="mdc-list-item option">
-      <span className="mdc-list-item__text">
+    <li className="mdc-deprecated-list-item option">
+      <span className="mdc-deprecated-list-item__text">
         Suggestions on load
-        <span className="mdc-list-item__secondary-text">
+        <span className="mdc-deprecated-list-item__secondary-text">
           Show suggestions when there is no text is the Saka search bar
         </span>
       </span>
-      <div className="mdc-list-item__meta mdc-switch">
+      <div className="mdc-deprecated-list-item__meta mdc-switch">
         <input
           type="checkbox"
           id="basic-switch"
