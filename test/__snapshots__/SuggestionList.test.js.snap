@@ -3,7 +3,7 @@
 exports[`SuggestionList component  should be empty when no values provided 1`] = `
 <div>
   <ul
-    class="mdc-list mdc-list--two-line mdc-list--avatar-list two-line-avatar-text-icon-demo list-container"
+    class="mdc-deprecated-list mdc-deprecated-list--two-line mdc-deprecated-list--avatar-list two-line-avatar-text-icon-demo list-container"
   />
 </div>
 `;
