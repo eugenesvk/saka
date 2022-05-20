@@ -1,4 +1,3 @@
-import browser from 'webextension-polyfill';
 import * as providers from './providers/index.js';
 
 export async function getSuggestions([mode, searchString]) {

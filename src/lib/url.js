@@ -1,4 +1,3 @@
-import browser from 'webextension-polyfill';
 import knownTLDs from './tld.js';
 /**
  * Given the URL of a suggestion and the search text, makes the URL nicer

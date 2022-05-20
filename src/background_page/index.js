@@ -1,4 +1,3 @@
-import browser from 'webextension-polyfill';
 import 'msg/server.js';
 import { tabHistory, recentlyClosed } from './tabHistory.js';
 

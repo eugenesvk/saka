@@ -71,6 +71,7 @@ module.exports = function webpackConfig(env, argv) {
     },
     plugins: [
       new webpack.optimize.ModuleConcatenationPlugin(),
+      new webpack.ProvidePlugin({ browser:'webextension-polyfill', }),
       new CopyWebpackPlugin({ patterns: [
         {                     from:'static'},
         // {context:'src/modes', from:'**/default.json', to:'default_[folder].json'},

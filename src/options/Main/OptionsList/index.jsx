@@ -1,4 +1,3 @@
-import browser from 'webextension-polyfill';
 import { Component, h } from 'preact';
 import DefaultModeSelection from './DefaultModeSelection.jsx';
 import OnlyShowSearchBarSelector from './OnlyShowSearchBarSelector.jsx';

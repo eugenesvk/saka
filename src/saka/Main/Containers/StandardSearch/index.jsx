@@ -1,4 +1,3 @@
-import browser from 'webextension-polyfill';
 import { Component, h } from 'preact';
 import {
   getSuggestions,

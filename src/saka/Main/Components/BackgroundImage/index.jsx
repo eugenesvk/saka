@@ -1,4 +1,3 @@
-import browser from 'webextension-polyfill';
 import { h, Component } from 'preact';
 import msg from 'msg/client.js';
 import 'scss/styles.scss';

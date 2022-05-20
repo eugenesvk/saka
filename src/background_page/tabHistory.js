@@ -1,5 +1,3 @@
-import browser from 'webextension-polyfill';
-
 // list of tab ids in order of increasing age since last visit
 export const tabHistory = [];
 

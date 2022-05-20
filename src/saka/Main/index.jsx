@@ -1,6 +1,5 @@
 import 'material-components-web/dist/material-components-web.css';
 import 'scss/styles.scss';
-import browser from 'webextension-polyfill';
 import { Component, h } from 'preact';
 import StandardSearch from './Containers/StandardSearch/index.jsx';
 
