@@ -115,7 +115,7 @@ export default class OptionsList extends Component {
             <input
               type="submit"
               value="Save"
-              className="mdc-button mdc-button--raised mdc-button--dense options-save-button"
+              className="mdc-button mdc-button--raised options-save-button"
               onClick={this.handleOptionsSave}
             />
           </div>

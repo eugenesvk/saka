@@ -6,6 +6,9 @@
 @use '@material/animation/functions';
 @use '@material/theme/mdc-theme';
 
+@import '@material/button/mdc-button';
+@import '@material/button/mixins';
+
 html {
   background-color: #eeeeee;
 }
@@ -35,6 +38,10 @@ html {
 .options-save {
   margin-top: 5px;
   margin-right: 10px;
+}
+
+.options-save-button {
+  @include mdc-button-density(-3);
 }
 
 .options-icon {
