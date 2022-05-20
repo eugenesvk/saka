@@ -8,6 +8,7 @@ const ShowSakaHotkeys = function ShowSakaHotkeys({
   return (
     <li className="mdc-deprecated-list-item option">
       <span className="mdc-deprecated-list-item__text">Saka Hotkeys</span>
+      <div className="mdc-icon-button__ripple"></div>
       <i
         className="mdc-deprecated-list-item__meta mdc-icon-button material-icons"
         role="button"
