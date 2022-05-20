@@ -72,14 +72,12 @@ describe('lib/util ', () => {
             {
               indices: [[0, 4]],
               value: 'Hello',
-              key: 'title',
-              arrayIndex: 0
+              key: 'title'
             },
             {
               indices: [[0, 0], [11, 15]],
               value: 'http://www.hello.com',
-              key: 'url',
-              arrayIndex: 0
+              key: 'url'
             }
           ]
         }

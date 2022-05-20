@@ -135,14 +135,12 @@ describe('server/providers/closedTabs ', () => {
             {
               indices: [[0, 3]],
               value: 'Google',
-              key: 'title',
-              arrayIndex: 0
+              key: 'title'
             },
             {
               indices: [[8, 11]],
               value: 'https://google.com',
-              key: 'url',
-              arrayIndex: 0
+              key: 'url'
             }
           ]
         }

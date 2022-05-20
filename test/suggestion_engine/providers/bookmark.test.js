@@ -153,14 +153,12 @@ describe('server/providers/bookmark ', () => {
             {
               indices: [[0, 3]],
               value: 'Saka',
-              key: 'title',
-              arrayIndex: 0
+              key: 'title'
             },
             {
-              indices: [[4, 4], [21, 24]],
+              indices: [[4, 4], [21, 24], [28, 31]],
               value: 'https://github.com/lusakasa/saka',
-              key: 'url',
-              arrayIndex: 0
+              key: 'url'
             }
           ]
         }

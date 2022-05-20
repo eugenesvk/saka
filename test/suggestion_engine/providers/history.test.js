@@ -97,14 +97,12 @@ describe('server/providers/history ', () => {
             {
               indices: [[0, 3]],
               value: 'Saka Github',
-              key: 'title',
-              arrayIndex: 0
+              key: 'title'
             },
             {
-              indices: [[4, 4], [21, 24]],
+              indices: [[4, 4], [21, 24], [28, 31]],
               value: 'https://github.com/lusakasa/saka',
-              key: 'url',
-              arrayIndex: 0
+              key: 'url'
             }
           ]
         },
@@ -118,14 +116,12 @@ describe('server/providers/history ', () => {
             {
               indices: [[2, 2]],
               value: 'Example',
-              key: 'title',
-              arrayIndex: 0
+              key: 'title'
             },
             {
               indices: [[4, 4], [10, 10]],
               value: 'https://example.com',
-              key: 'url',
-              arrayIndex: 0
+              key: 'url'
             }
           ]
         }

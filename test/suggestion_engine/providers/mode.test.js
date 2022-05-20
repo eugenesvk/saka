@@ -72,8 +72,7 @@ describe('server/providers/mode ', () => {
             {
               indices: [[2, 2], [6, 6], [9, 10]],
               value: 'Recently Closed Tabs',
-              key: 'label',
-              arrayIndex: 0
+              key: 'label'
             }
           ]
         },
@@ -90,8 +89,7 @@ describe('server/providers/mode ', () => {
             {
               indices: [[2, 2], [6, 6]],
               value: 'Recently Viewed',
-              key: 'label',
-              arrayIndex: 0
+              key: 'label'
             }
           ]
         }
