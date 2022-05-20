@@ -14,7 +14,7 @@ export default class Input extends Component {
     } = this.props;
 
     return (
-      <section className="mdc-text-field mdc-text-field--fullwidth search-field-wrapper">
+      <section className="mdc-text-field mdc-text-field--filled mdc-text-field--fullwidth mdc-text-field--no-label search-field-wrapper">
         <input
           id="search-bar"
           className="mdc-text-field__input search-field-input"
