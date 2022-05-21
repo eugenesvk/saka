@@ -1,5 +1,5 @@
 import Icon from '../src/saka/Main/Components/Icon/index.jsx';
-import { render } from 'preact-render-spy';
+import { render } from '@testing-library/preact';
 import { h } from 'preact';
 
 describe('Icon component ', () => {

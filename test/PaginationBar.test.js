@@ -1,5 +1,5 @@
 import PaginationBar from '@/saka/Main/Components/PaginationBar/index.jsx';
-import { render, getByText } from 'preact-testing-library';
+import { render, getByText } from '@testing-library/preact';
 import { h } from 'preact';
 
 describe('PaginationBar component ', () => {

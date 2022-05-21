@@ -4,7 +4,7 @@ import {
   cleanup,
   fireEvent,
   flushPromises
-} from 'preact-testing-library';
+} from '@testing-library/preact';
 import { fadedColorMap } from 'lib/colors.js';
 import { h } from 'preact';
 

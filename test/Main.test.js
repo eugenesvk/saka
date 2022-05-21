@@ -5,7 +5,7 @@ import {
   wait,
   fireEvent,
   flushPromises
-} from 'preact-testing-library';
+} from '@testing-library/preact';
 import '@testing-library/jest-dom/extend-expect';
 import Main from '@/saka/Main/index.jsx';
 

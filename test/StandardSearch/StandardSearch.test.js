@@ -5,7 +5,7 @@ import {
   flushPromises,
   fireEvent,
   wait
-} from 'preact-testing-library';
+} from '@testing-library/preact';
 
 import StandardSearch from '@/saka/Main/Containers/StandardSearch/index.jsx';
 

@@ -4,7 +4,7 @@ import {
   cleanup,
   fireEvent,
   flushPromises
-} from 'preact-testing-library';
+} from '@testing-library/preact';
 import Suggestion from '@/saka/Main/Components/SuggestionList/Components/Suggestion';
 
 test('should render when props passed in', async () => {

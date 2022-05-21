@@ -1,5 +1,5 @@
 import SuggestionList from '@/saka/Main/Components/SuggestionList/index.jsx';
-import { render } from 'preact-testing-library';
+import { render } from '@testing-library/preact';
 import { h } from 'preact';
 
 const MAX_SUGGESTIONS = 6;

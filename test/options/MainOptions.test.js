@@ -6,7 +6,7 @@ import {
   fireEvent,
   flushPromises,
   getByValue
-} from 'preact-testing-library';
+} from '@testing-library/preact';
 import '@testing-library/jest-dom/extend-expect';
 import MainOptions from '@/options/Main/MainOptions.jsx';
 
