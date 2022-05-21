@@ -2,7 +2,7 @@ const babelOptions = {
   presets: [['env', { targets: { node: '8' } }], 'react'],
   plugins: [
     [
-      'transform-react-jsx',
+      '@babel/plugin-transform-react-jsx',
       {
         pragma: 'h'
       }
