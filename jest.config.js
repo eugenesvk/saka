@@ -8,7 +8,6 @@ module.exports = {
     '^msg/(.*)$':                 '<rootDir>/src/msg/$1',
     '^.*\\.(css|less|sass|scss)$':'<rootDir>/test/__mocks__/styleMock.scss',
     '^react-dom/server$':         '<rootDir>/node_modules/preact-render-to-string/dist/index.js',
-    '^react-addons-test-utils$':  '<rootDir>/node_modules/preact-test-utils/lib/index.js',
     '^react$':                    'preact/compat',
     '^react-dom$':                'preact/compat'
   },
