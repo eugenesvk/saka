@@ -2,12 +2,14 @@ import { h } from 'preact';
 import {
   render,
   cleanup,
-  flushPromises,
+  // flushPromises,
   fireEvent,
   wait
 } from '@testing-library/preact';
 
 import StandardSearch from '@/saka/Main/Containers/StandardSearch/index.jsx';
+
+const flushPromises = () => new Promise(process.nextTick);
 
 beforeEach(() => {
   browser.flush();

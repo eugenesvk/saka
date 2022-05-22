@@ -3,9 +3,11 @@ import {
   render,
   cleanup,
   fireEvent,
-  flushPromises
+  // flushPromises
 } from '@testing-library/preact';
 import Suggestion from '@/saka/Main/Components/SuggestionList/Components/Suggestion';
+
+const flushPromises = () => new Promise(process.nextTick);
 
 test('should render when props passed in', async () => {
   global.SAKA_PLATFORM = 'chrome';

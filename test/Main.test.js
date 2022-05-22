@@ -4,10 +4,12 @@ import {
   cleanup,
   wait,
   fireEvent,
-  flushPromises
+  // flushPromises
 } from '@testing-library/preact';
 import '@testing-library/jest-dom/extend-expect';
 import Main from '@/saka/Main/index.jsx';
+
+const flushPromises = () => new Promise(process.nextTick);
 
 beforeEach(() => {
   browser.flush();
