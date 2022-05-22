@@ -11,6 +11,7 @@ module.exports = {
     '^react$':                    'preact/compat',
     '^react-dom$':                'preact/compat'
   },
+  testEnvironment: 'jsdom',
   moduleFileExtensions: ['js', 'jsx'],
   transform: { '^.+\\.(js|jsx)?$': '<rootDir>/jest.transform.js' },
   collectCoverage: true,
