@@ -17,8 +17,8 @@ module.exports = function webpackConfig(env, argv) {
   const config = {
     resolve: {
       alias: {
-        react: 'preact-compat',
-        'react-dom': 'preact-compat',
+        react: 'preact/compat',
+        'react-dom': 'preact/compat',
         src: path.join(__dirname, 'src'),
         msg: path.join(__dirname, 'src/msg'),
         suggestion_engine: path.join(__dirname, 'src/suggestion_engine'),
