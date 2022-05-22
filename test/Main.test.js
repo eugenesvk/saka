@@ -2,7 +2,7 @@ import { h } from 'preact';
 import {
   render,
   cleanup,
-  wait,
+  waitFor,
   fireEvent
   // flushPromises
 } from '@testing-library/preact';

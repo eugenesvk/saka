@@ -2,7 +2,7 @@ import { h } from 'preact';
 import {
   render,
   cleanup,
-  wait,
+  waitFor,
   fireEvent,
   // flushPromises,
   getByValue
@@ -22,7 +22,7 @@ test('should show all options when not showing key bindings', async () => {
   const { getByText, queryByText } = render(<MainOptions />);
 
   getByText('Saka Options');
-  await wait(() => getByText('General Settings'));
+  await waitFor(() => getByText('General Settings'));
   //DefaultModeSelection
   getByText('Default Mode');
   getByText('Select the default mode Saka opens with');
@@ -41,7 +41,7 @@ test('should only show key bindings when setting is true', async () => {
   global.SAKA_PLATFORM = 'chrome';
   const { debug, getByText, getByLabelText } = render(<MainOptions />);
 
-  await wait(() => getByText('General Settings'));
+  await waitFor(() => getByText('General Settings'));
   getByText('Saka Hotkeys');
   fireEvent.click(getByText('keyboard'), { button: 0 });
   await flushPromises();
@@ -63,7 +63,7 @@ test('should save settings when save button clicked', async () => {
   });
   const { getByText, getByLabelText, getByValue } = render(<MainOptions />);
 
-  await wait(() => getByText('General Settings'));
+  await waitFor(() => getByText('General Settings'));
 
   fireEvent.change(getByLabelText('Select default mode'), {
     target: { value: 'history' }
