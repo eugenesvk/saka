@@ -52,6 +52,7 @@
     "generate-json-webpack-plugin": "^0.3.1",
     "html-loader": "^3.1.0",
     "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
     "markdown-loader": "^8.0.0",
     "preact-render-to-string": "^5.2.0",
     "prettier": "^2.6.2",
