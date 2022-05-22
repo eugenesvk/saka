@@ -1,6 +1,10 @@
 import { h } from 'preact';
-import { render, cleanup, flushPromises } from '@testing-library/preact';
+import { render, cleanup
+  // flushPromises
+  } from '@testing-library/preact';
 import SearchBar from '@/saka/Main/Components/SearchBar/index';
+
+const flushPromises = () => new Promise(process.nextTick);
 
 afterEach(cleanup);
 

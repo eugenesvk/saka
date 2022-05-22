@@ -4,11 +4,13 @@ import {
   cleanup,
   wait,
   fireEvent,
-  flushPromises,
+  // flushPromises,
   getByValue
 } from '@testing-library/preact';
 import '@testing-library/jest-dom/extend-expect';
 import MainOptions from '@/options/Main/MainOptions.jsx';
+
+const flushPromises = () => new Promise(process.nextTick);
 
 beforeEach(() => {
   browser.flush();

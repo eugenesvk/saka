@@ -2,11 +2,13 @@ import ModeSwitcher from '@/saka/Main/Components/ModeSwitcher/index.jsx';
 import {
   render,
   cleanup,
-  fireEvent,
-  flushPromises
+  fireEvent
+  // flushPromises
 } from '@testing-library/preact';
 import { fadedColorMap } from 'lib/colors.js';
 import { h } from 'preact';
+
+const flushPromises = () => new Promise(process.nextTick);
 
 describe('ModeSwitcher component ', () => {
   it('should render tabs with selected tab colored, rest of tabs gray', async () => {
