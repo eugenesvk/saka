@@ -5,7 +5,7 @@ import {
   waitFor,
   fireEvent,
   // flushPromises,
-  getByValue
+  getByDisplayValue
 } from '@testing-library/preact';
 import '@testing-library/jest-dom/extend-expect';
 import MainOptions from '@/options/Main/MainOptions.jsx';
@@ -61,7 +61,7 @@ test('should save settings when save button clicked', async () => {
   browser.storage.sync.get.returns({
     sakaSettings: {}
   });
-  const { getByText, getByLabelText, getByValue } = render(<MainOptions />);
+  const { getByText, getByLabelText, getByDisplayValue } = render(<MainOptions />);
 
   await waitFor(() => getByText('General Settings'));
 
@@ -76,7 +76,7 @@ test('should save settings when save button clicked', async () => {
   fireEvent.click(getByLabelText('Enable fuzzy search'), { button: 0 });
   await flushPromises();
 
-  fireEvent.click(getByValue('Save'), { button: 0 });
+  fireEvent.click(getByDisplayValue('Save'), { button: 0 });
   await flushPromises();
 
   expect(browser.storage.sync.get.calledOnce);
