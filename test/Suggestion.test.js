@@ -2,7 +2,7 @@ import { h } from 'preact';
 import {
   render,
   cleanup,
-  fireEvent,
+  fireEvent
   // flushPromises
 } from '@testing-library/preact';
 import Suggestion from '@/saka/Main/Components/SuggestionList/Components/Suggestion';

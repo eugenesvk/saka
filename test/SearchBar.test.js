@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import { render, cleanup,
+import { render, cleanup
   // flushPromises
   } from '@testing-library/preact';
 import SearchBar from '@/saka/Main/Components/SearchBar/index';

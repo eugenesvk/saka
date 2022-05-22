@@ -3,7 +3,7 @@ import {
   render,
   cleanup,
   wait,
-  fireEvent,
+  fireEvent
   // flushPromises
 } from '@testing-library/preact';
 import '@testing-library/jest-dom/extend-expect';

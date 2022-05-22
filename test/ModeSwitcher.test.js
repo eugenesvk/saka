@@ -2,7 +2,7 @@ import ModeSwitcher from '@/saka/Main/Components/ModeSwitcher/index.jsx';
 import {
   render,
   cleanup,
-  fireEvent,
+  fireEvent
   // flushPromises
 } from '@testing-library/preact';
 import { fadedColorMap } from 'lib/colors.js';
