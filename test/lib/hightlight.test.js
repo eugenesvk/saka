@@ -35,10 +35,10 @@ test('should return highlighted text when matches is defined and not empty', asy
   expect(result).toEqual([
     'http://www.ex',
     {
-      attributes: { style: { 'font-weight': 'bold' } },
-      children: ['ampl'],
-      key: undefined,
-      nodeName: 'span'
+      props: { style:{'font-weight':'bold'}, children:'ampl' },
+      key  : undefined,
+      type : 'span',
+      __:null,__b:0,__c:null,__d:undefined,__e:null,__h:null,__k:null,__v:1,constructor:undefined,      ref:undefined,
     },
     'e.com'
   ]);
