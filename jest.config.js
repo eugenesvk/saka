@@ -17,6 +17,7 @@ module.exports = {
   testEnvironment: 'jsdom',
   moduleFileExtensions: ['js', 'jsx'],
   transform: { '^.+\\.(js|jsx)?$': '<rootDir>/jest.transform.js' },
+  transformIgnorePatterns: ["node_modules/(?!preact)", "\\.pnp\\.[^\\\/]+$"], // Default: ["/node_modules/", "\\.pnp\\.[^\\\/]+$"]
   collectCoverage: true,
   collectCoverageFrom: ['src/**/*.{js,jsx}'],
   coverageThreshold: {
