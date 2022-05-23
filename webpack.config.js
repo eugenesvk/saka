@@ -55,9 +55,9 @@ module.exports = function webpackConfig(env, argv) {
     },
     module: {
       rules: [
-        { test:/\.(jsx|js)$/ , use: ['babel-loader'], exclude:/node_modules/ },
-        { test: /\.css$/i    , use: ['style-loader','css-loader'] },
-        { test: /\.s[ac]ss$/i, use: ['style-loader','css-loader', {loader:'sass-loader',
+        { test:/\.(jsx|js)$/, use:[require.resolve('babel-loader')], exclude:/node_modules/ },
+        { test:/\.css$/i    , use:[require.resolve('style-loader'),require.resolve('css-loader')] },
+        { test:/\.s[ac]ss$/i, use:[require.resolve('style-loader'),require.resolve('css-loader'), {loader:require.resolve('sass-loader'),
           options:{ sassOptions: {
             importer(url, prev) {
               if (url.indexOf('@material') === 0) {
@@ -66,12 +66,12 @@ module.exports = function webpackConfig(env, argv) {
                 return { file: path.resolve(nodeModulePath) };
               }
               return { file: url }; } } } } ] },
-        { test: /\.md$/, use: ['html-loader', {loader:'markdown-loader',options:{renderer}}]}
+        { test:/\.md$/      , use:[require.resolve('html-loader'), {loader:require.resolve('markdown-loader'),options:{renderer}}]}
       ]
     },
     plugins: [
       new webpack.optimize.ModuleConcatenationPlugin(),
-      new webpack.ProvidePlugin({ browser:'webextension-polyfill', }),
+      new webpack.ProvidePlugin({ browser:require.resolve('webextension-polyfill') }),
       new CopyWebpackPlugin({ patterns: [
         {                     from:'static'},
         // {context:'src/modes', from:'**/default.json', to:'default_[folder].json'},
