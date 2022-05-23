@@ -10,7 +10,7 @@ describe('Icon component ', () => {
     };
 
     const iconRender = render(<Icon {...props} />);
-    const icon = iconRender.find('#icon');
+    const icon = iconRender.findByText('icon');
 
     expect(icon).toBeTruthy();
   });
