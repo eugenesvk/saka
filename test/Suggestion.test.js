@@ -118,7 +118,7 @@ test('should use default favicon when no url to favicon', () => {
     onClick
   };
 
-  const { getByText } = render(<Suggestion {...props} />);
-  expect(getByText('tab')).toMatchSnapshot();
+  const { getAllByText } = render(<Suggestion {...props} />);
+  expect(getAllByText('tab')[0]).toMatchSnapshot();
 });
 afterEach(cleanup);
