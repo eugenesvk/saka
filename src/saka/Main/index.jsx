@@ -1,5 +1,5 @@
 import 'material-components-web/dist/material-components-web.css';
-import 'scss/styles.scss';
+import 'saka/src/scss/styles.scss';
 import { Component, h } from 'preact';
 import StandardSearch from './Containers/StandardSearch/index.jsx';
 

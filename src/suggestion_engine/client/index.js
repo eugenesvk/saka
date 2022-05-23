@@ -1,4 +1,4 @@
-import msg from 'msg/client.js';
+import msg from 'saka/src/msg/client.js';
 
 export async function getSuggestions(mode, searchString) {
   return msg('sg', [mode, searchString]);

@@ -1,7 +1,7 @@
 import { h } from 'preact';
 import HotkeyListRow from './HotkeyListRow.jsx';
 import 'material-components-web/dist/material-components-web.css';
-import { ctrlChar } from 'lib/utils';
+import { ctrlChar } from 'saka/src/lib/utils';
 
 const SakaHotkeysList = function SakaHotkeysList({
   handleOpenSakaKeybindings

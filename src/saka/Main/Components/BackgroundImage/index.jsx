@@ -1,6 +1,6 @@
 import { h, Component } from 'preact';
-import msg from 'msg/client.js';
-import 'scss/styles.scss';
+import msg from 'saka/src/msg/client.js';
+import 'saka/src/scss/styles.scss';
 
 export default class BackgroundImage extends Component {
   state = {

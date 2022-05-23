@@ -1,4 +1,4 @@
-import { getFilteredSuggestions, objectFromArray } from 'lib/utils.js';
+import { getFilteredSuggestions, objectFromArray } from 'saka/src/lib/utils.js';
 
 export async function allTabSuggestions() {
   const tabs = await browser.tabs.query({});

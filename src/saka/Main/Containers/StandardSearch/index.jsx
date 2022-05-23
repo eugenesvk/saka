@@ -3,10 +3,10 @@ import {
   getSuggestions,
   activateSuggestion,
   closeTab
-} from 'suggestion_engine/client/index.js';
-import { preprocessSuggestion } from 'suggestion_utils/index.js';
-import { ctrlKey } from 'lib/utils.js';
-import { slowWheelEvent } from 'lib/dom.js';
+} from 'saka/src/suggestion_engine/client/index.js';
+import { preprocessSuggestion } from 'saka/src/suggestion_utils/index.js';
+import { ctrlKey } from 'saka/src/lib/utils.js';
+import { slowWheelEvent } from 'saka/src/lib/dom.js';
 import SearchBar from '../../Components/SearchBar/index.jsx';
 import SuggestionList from '../../Components/SuggestionList/index.jsx';
 import PaginationBar from '../../Components/PaginationBar/index.jsx';

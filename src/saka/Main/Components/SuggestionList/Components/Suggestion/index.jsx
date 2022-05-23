@@ -1,8 +1,8 @@
 import { h } from 'preact';
-import { fadedColorMap } from 'lib/colors.js';
-import { ctrlChar } from 'lib/utils.js';
-import { icons } from 'suggestion_utils/index.js';
-import 'scss/styles.scss';
+import { fadedColorMap } from 'saka/src/lib/colors.js';
+import { ctrlChar } from 'saka/src/lib/utils.js';
+import { icons } from 'saka/src/suggestion_utils/index.js';
+import 'saka/src/scss/styles.scss';
 
 export default ({
   type,

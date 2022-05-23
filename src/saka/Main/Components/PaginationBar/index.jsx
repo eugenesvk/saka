@@ -1,6 +1,6 @@
 import { h } from 'preact';
-import { ctrlChar } from 'lib/utils.js';
-import 'scss/styles.scss';
+import { ctrlChar } from 'saka/src/lib/utils.js';
+import 'saka/src/scss/styles.scss';
 
 export default ({
   firstVisibleIndex,

@@ -4,7 +4,7 @@ import {
   getSuggestions,
   activateSuggestion,
   closeTab
-} from 'suggestion_engine/server/index.js';
+} from 'saka/src/suggestion_engine/server/index.js';
 
 const actions = {
   // endpoints client queries with msg()

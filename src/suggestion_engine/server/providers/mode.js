@@ -1,5 +1,5 @@
-import { ctrlChar } from 'lib/utils.js';
-import { colorMap, fadedColorMap } from 'lib/colors.js';
+import { ctrlChar } from 'saka/src/lib/utils.js';
+import { colorMap, fadedColorMap } from 'saka/src/lib/colors.js';
 import Fuse from 'fuse.js';
 
 export const suggestions = [

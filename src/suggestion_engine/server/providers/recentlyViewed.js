@@ -1,4 +1,4 @@
-import { getFilteredSuggestions } from 'lib/utils.js';
+import { getFilteredSuggestions } from 'saka/src/lib/utils.js';
 import tabSuggestions, {
   allTabSuggestions,
   recentVisitedTabSuggestions
