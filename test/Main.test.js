@@ -31,6 +31,9 @@ beforeEach(() => {
 });
 
 test('should show all options when not showing key bindings', async () => {
+  browser.storage.sync.get.returns({
+    sakaSettings: { mode:'tab', showEmptySearchSuggestions:false },
+    searchHistory: [] });
   render(<Main />);
 });
 
