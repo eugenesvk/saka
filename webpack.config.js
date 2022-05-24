@@ -37,17 +37,13 @@ module.exports = function webpackConfig(env, argv) {
       saka: 'src/saka/index.jsx',
       'saka-options': 'src/options/saka-options.jsx'
     },
-    optimization: {
-      splitChunks: {
-        cacheGroups: {
-          commons: {
-            test: /[\\/]node_modules[\\/]/,
-            name: 'vendor',
-            chunks: 'all'
-          }
+    optimization:{ splitChunks:{ cacheGroups:{
+      commons: {
+        test  : /[\\/]node_modules[\\/]/,
+        name  : 'vendor',
+        chunks: 'all'
         }
-      }
-    },
+      }}},
     output: {
       path: `${__dirname}/dist`,
       filename: '[name].js'
