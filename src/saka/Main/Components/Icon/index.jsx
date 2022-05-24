@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import 'saka/src/scss/styles.scss';
+import 'scss/styles.scss';
 
 export default ({ icon, color }) => {
   return (

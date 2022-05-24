@@ -1,5 +1,5 @@
 import 'material-components-web/dist/material-components-web.css';
-import 'saka/src/scss/styles.scss';
+import 'scss/styles.scss';
 import { h, Component } from 'preact';
 import Suggestion from './Containers/SuggestionSelector.jsx';
 

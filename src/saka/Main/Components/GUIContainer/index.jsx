@@ -1,6 +1,6 @@
 import { h, Component } from 'preact';
-import msg from 'saka/src/msg/client.js';
-import 'saka/src/scss/styles.scss';
+import msg from 'msg/client.js';
+import 'scss/styles.scss';
 
 // Makes GUI constant size
 export default class GUIContainer extends Component {

@@ -1,4 +1,4 @@
-import 'saka/src/msg/server.js';
+import 'msg/server.js';
 import { tabHistory, recentlyClosed } from './tabHistory.js';
 
 window.tabHistory = tabHistory;

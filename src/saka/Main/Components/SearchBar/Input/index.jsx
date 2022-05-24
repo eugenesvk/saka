@@ -1,7 +1,7 @@
 import { Component, h } from 'preact';
 
 // import '@material/textfield/dist/mdc.textfield.min.css';
-import 'saka/src/scss/styles.scss';
+import 'scss/styles.scss';
 
 export default class Input extends Component {
   render() {

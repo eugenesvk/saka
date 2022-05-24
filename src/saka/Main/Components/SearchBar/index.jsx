@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import 'saka/src/scss/styles.scss';
+import 'scss/styles.scss';
 import Input from './Input/index.jsx';
 
 export default ({

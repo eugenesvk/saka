@@ -1,5 +1,5 @@
-import { isURL, extractProtocol, isProtocol } from 'saka/src/lib/url.js';
-import { getFilteredSuggestions } from 'saka/src/lib/utils.js';
+import { isURL, extractProtocol, isProtocol } from 'lib/url.js';
+import { getFilteredSuggestions } from 'lib/utils.js';
 
 // https://github.com/nwjs/chromium.src/blob/45886148c94c59f45f14a9dc7b9a60624cfa626a/components/omnibox/browser/bookmark_provider.cc
 async function allBookmarkSuggestions(searchText) {

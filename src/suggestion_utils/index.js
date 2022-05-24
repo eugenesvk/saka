@@ -1,4 +1,4 @@
-import { prettifyURL, isURL } from 'saka/src/lib/url.js';
+import { prettifyURL, isURL } from 'lib/url.js';
 
 export const icons = {
   mode: 'apps',

@@ -1,7 +1,7 @@
-import { isSakaUrl } from 'saka/src/lib/url.js';
+import { isSakaUrl } from 'lib/url.js';
 // import { filter } from 'rxjs/operator/filter';
 import { allTabSuggestions } from './tab.js';
-import { getFilteredSuggestions } from 'saka/src/lib/utils.js';
+import { getFilteredSuggestions } from 'lib/utils.js';
 
 export async function getAllSuggestions() {
   const sessions = await browser.sessions.getRecentlyClosed();

@@ -1,5 +1,5 @@
-import { isSakaUrl } from 'saka/src/lib/url.js';
-import { getFilteredSuggestions } from 'saka/src/lib/utils.js';
+import { isSakaUrl } from 'lib/url.js';
+import { getFilteredSuggestions } from 'lib/utils.js';
 
 export async function allHistorySuggestions(searchText) {
   const results = await browser.history.search({
