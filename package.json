@@ -10,6 +10,7 @@
     "build:firefox": "npm run clean && webpack --config webpack.config.js --mode=development --env target=firefox:benchmark   --progress --color",
     "build:firefox:prod": "npm run clean && webpack --config webpack.config.js --mode=production  --env target=firefox:nobenchmark --progress --color",
     "build:profile": "npm run clean && webpack --config webpack.config.js --progress --profile --color && cp ./static/* ./dist",
+    "build:stat": "webpack --config webpack.config.js --mode=development --env target=chrome:benchmark    --progress --color --stats verbose",
     "zip": "bestzip",
     "clean": "rimraf dist",
     "test": "jest",
