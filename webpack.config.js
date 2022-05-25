@@ -63,7 +63,7 @@ module.exports = function webpackConfig(env, argv) {
           options:{ sassOptions: {
             importer(url, prev) {
               if (url.indexOf('@material') === 0) {
-                console.log(`  ×${url}`)
+                // console.log(`  ×${url}`)
                 const filePath = url.split('@material')[1];
                 const nodeModulePath = `./node_modules/@material/${filePath}`;
                 return { file:path.resolve(nodeModulePath) };
