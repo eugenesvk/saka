@@ -53,15 +53,24 @@ module.exports = function webpackConfig(env, argv) {
       rules: [
         { test:/\.(jsx|js)$/, use:[require.resolve('babel-loader')], exclude:/node_modules/ },
         { test:/\.css$/i    , use:[require.resolve('style-loader'),require.resolve('css-loader')] },
-        { test:/\.s[ac]ss$/i, use:[require.resolve('style-loader'),require.resolve('css-loader'), {loader:require.resolve('sass-loader'),
+        { test:/\.s[ac]ss$/i, use:[require.resolve('style-loader'),require.resolve('css-loader'),
+          // {loader:require.resolve('sass-loader'),
+          // options:{ sassOptions: {
+          //   includePaths: [path.resolve(__dirname, 'node_modules')],
+          //   }}}
+
+          {loader:require.resolve('sass-loader'),
           options:{ sassOptions: {
             importer(url, prev) {
               if (url.indexOf('@material') === 0) {
+                console.log(`×${url}`)
                 const filePath = url.split('@material')[1];
                 const nodeModulePath = `./node_modules/@material/${filePath}`;
-                return { file: path.resolve(nodeModulePath) };
+                return { file:path.resolve(nodeModulePath) };
               }
-              return { file: url }; } } } } ] },
+              return { file:url }; }
+            }}}
+          ]},
         { test:/\.md$/      , use:[require.resolve('html-loader'), {loader:require.resolve('markdown-loader'),options:{renderer}}]}
       ]
     },
