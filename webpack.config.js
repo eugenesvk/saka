@@ -44,11 +44,6 @@ module.exports = function webpackConfig(env, argv) {
         chunks: 'all'
         }
       }}},
-    output: {
-      path: `${__dirname}/dist`,
-      filename: '[name].js'
-      // sourceMapFilename: '[name].js.map'
-    },
     module: {
       rules: [
         { test:/\.(jsx|js)$/, use:[require.resolve('babel-loader')], exclude:/node_modules/ },
