@@ -37,13 +37,13 @@ module.exports = function webpackConfig(env, argv) {
       saka: 'src/saka/index.jsx',
       'saka-options': 'src/options/saka-options.jsx'
     },
-    optimization:{ splitChunks:{ cacheGroups:{
-      commons: {
-        test  : /[\\/]node_modules[\\/]/,
-        name  : 'vendor',
-        chunks: 'all'
-        }
-      }}},
+    // optimization:{ splitChunks:{ cacheGroups:{
+    //   commons: {
+    //     test  : /[\\/]node_modules[\\/]/,
+    //     name  : 'vendor',
+    //     chunks: 'all'
+    //     }
+    //   }}},
     module: {
       rules: [
         { test:/\.(jsx|js)$/, use:[require.resolve('babel-loader')], exclude:/node_modules/ },
