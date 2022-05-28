@@ -7,9 +7,12 @@ module.exports = {
     '^lib/(.*)$':                 '<rootDir>/src/lib/$1',
     '^msg/(.*)$':                 '<rootDir>/src/msg/$1',
     '^.*\\.(css|less|sass|scss)$':'<rootDir>/test/__mocks__/styleMock.scss',
-    '^react-dom/server$':         '<rootDir>/node_modules/preact-render-to-string/dist/index.js',
-    '^react$':                    'preact/compat',
-    '^react-dom$':                'preact/compat'
+    '^react-dom/server$':         'preact-render-to-string',
+    '^react$'                   : 'preact/compat',
+    '^react-dom/test-utils$'    : 'preact/test-utils',
+    '^react-dom$'               : 'preact/compat',
+    '^react/jsx-runtime$'       : 'preact/jsx-runtime',
+    '^react-addons-test-utils$' : 'preact/test-utils'
   },
   testEnvironment: 'jsdom',
   moduleFileExtensions: ['js', 'jsx'],
