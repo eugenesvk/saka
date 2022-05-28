@@ -47,7 +47,7 @@ module.exports = function webpackConfig(env, argv) {
     module: {
       rules: [
         { test:/\.(jsx|js)$/, use:[require.resolve('babel-loader')], exclude:/node_modules/ },
-        { test:/\.css$/i    , use:[require.resolve('style-loader'),require.resolve('css-loader')] },
+        { test:/\.css$/i    , sideEffects:true, use:[require.resolve('style-loader'),require.resolve('css-loader')] },
         { test:/\.s[ac]ss$/i, use:[require.resolve('style-loader'),require.resolve('css-loader'), {loader:require.resolve('sass-loader'),
           options:{ sassOptions: {
             importer(url, prev) {
