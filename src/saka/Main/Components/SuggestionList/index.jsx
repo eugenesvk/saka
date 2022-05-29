@@ -1,5 +1,3 @@
-import 'material-components-web/dist/material-components-web.css';
-import 'scss/styles.scss';
 import { h, Component } from 'preact';
 import Suggestion from './Containers/SuggestionSelector.jsx';
 

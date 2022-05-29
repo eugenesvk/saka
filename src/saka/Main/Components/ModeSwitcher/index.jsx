@@ -2,7 +2,6 @@ import { h } from 'preact';
 import { suggestions } from 'src/suggestion_engine/server/providers/mode.js';
 import Icon from 'src/saka/Main/Components/Icon/index.jsx';
 import { fadedColorMap } from 'lib/colors.js';
-import 'scss/styles.scss';
 
 export default ({ mode, setMode }) => {
   const validModes = suggestions.map(suggestion => {

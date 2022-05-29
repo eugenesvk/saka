@@ -1,5 +1,4 @@
 import { h } from 'preact';
-import 'scss/styles.scss';
 
 export default ({ icon, color }) => {
   return (

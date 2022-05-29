@@ -1,6 +1,5 @@
 import { h, Component } from 'preact';
 import msg from 'msg/client.js';
-import 'scss/styles.scss';
 
 export default class BackgroundImage extends Component {
   state = {

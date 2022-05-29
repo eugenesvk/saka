@@ -1,8 +1,5 @@
 import { Component, h } from 'preact';
 
-// import '@material/textfield/dist/mdc.textfield.min.css';
-import 'scss/styles.scss';
-
 export default class Input extends Component {
   render() {
     const {

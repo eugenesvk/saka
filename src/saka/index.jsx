@@ -1,5 +1,5 @@
 import { render, h } from 'preact';
-import 'material-components-web/dist/material-components-web.css';
+import 'scss/styles.scss';
 
 import Main from './Main/index.jsx';
 

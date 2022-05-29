@@ -2,7 +2,6 @@ import { h } from 'preact';
 import { fadedColorMap } from 'lib/colors.js';
 import { ctrlChar } from 'lib/utils.js';
 import { icons } from 'suggestion_utils/index.js';
-import 'scss/styles.scss';
 
 export default ({
   type,
