@@ -13,7 +13,7 @@
     "build:statd": "                  webpack --config webpack.config.js --mode=development --env target=chrome:benchmark    --progress --color --stats verbose",
     "build:statp": "                  webpack --config webpack.config.js --mode=production  --env target=chrome:benchmark    --progress --color --stats verbose",
     "zip": "bestzip",
-    "clean": "rimraf dist",
+    "clean": "rimraf dist/*",
     "test": "jest",
     "test:clear": "jest --clearCache",
     "test:watch": "jest --watch",
