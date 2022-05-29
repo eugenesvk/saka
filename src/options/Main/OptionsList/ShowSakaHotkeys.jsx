@@ -1,7 +1,5 @@
 import { h } from 'preact';
 
-import 'material-components-web/dist/material-components-web.css';
-
 const ShowSakaHotkeys = function ShowSakaHotkeys({
   handleOpenSakaKeybindings
 }) {

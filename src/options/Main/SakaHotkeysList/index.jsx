@@ -1,6 +1,5 @@
 import { h } from 'preact';
 import HotkeyListRow from './HotkeyListRow.jsx';
-import 'material-components-web/dist/material-components-web.css';
 import { ctrlChar } from 'lib/utils';
 
 const SakaHotkeysList = function SakaHotkeysList({
@@ -9,7 +8,6 @@ const SakaHotkeysList = function SakaHotkeysList({
   return (
     <div className="saka-hotkey-list">
       <div id="top-bar">
-        <div className="mdc-icon-button__ripple"></div>
         <i
           className="mdc-icon-button material-icons"
           role="button"
@@ -21,7 +19,6 @@ const SakaHotkeysList = function SakaHotkeysList({
           arrow_back
         </i>
         <div className="tooltip">
-          <div className="mdc-icon-button__ripple"></div>
           <i
             id="custom-hotkey-info"
             className="mdc-icon-button material-icons"

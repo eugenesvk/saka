@@ -3,14 +3,26 @@
   $secondary:  #4db6ac, // Orange A200
 );
 
+@use "@material/top-app-bar/mdc-top-app-bar";	// MainOptions@options\Main
+@use "@material/elevation/mdc-elevation";    	// MainOptions@options\Main
+@use "@material/select/mdc-select";          	// DefaultModeSelection@options\Main\OptionsList
+@use "@material/list/mdc-list";              	// DefaultModeSelection@options\Main\OptionsList
+@use "@material/ripple";                     	// index.jsx@options\Main\SakaHotkeysList
+@use "@material/icon-button/mdc-icon-button";	// ShowSakaHotkeys@options\Main\OptionsList
+@use "@material/icon-button/styles";
 @use '@material/animation/functions';
-@use '@material/theme/mdc-theme';
 
 @import '@material/button/mdc-button';
 @import '@material/button/mixins';
 
 html {
   background-color: #eeeeee;
+}
+
+.mdc-icon-button {
+  @include ripple.surface;
+  @include ripple.radius-bounded(50%);
+  @include ripple.states;
 }
 
 .options-container {
@@ -41,7 +53,7 @@ html {
 }
 
 .options-save-button {
-  @include mdc-button-density(-3);
+  @include mdc-button-density(-1);
 }
 
 .options-icon {
