@@ -10,17 +10,17 @@ const EnableFuzzySearch = function EnableFuzzySearch() {
           Enable fuzzy search for bookmarks and history search
         </span>
       </span>
-      <div className="mdc-deprecated-list-item__meta mdc-switch">
+      <div className="mdc-deprecated-list-item__meta mdc-deprecated-switch">
         <input
           type="checkbox"
           id="basic-switch"
           aria-label="Enable fuzzy search"
-          className="mdc-switch__native-control"
+          className="mdc-deprecated-switch__native-control"
           checked={checked}
           onChange={handleEnableFuzzySearch}
         />
-        <div className="mdc-switch__background">
-          <div className="mdc-switch__knob" />
+        <div className="mdc-deprecated-switch__background">
+          <div className="mdc-deprecated-switch__knob" />
         </div>
       </div>
     </li>

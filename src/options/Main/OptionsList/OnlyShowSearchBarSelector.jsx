@@ -10,17 +10,17 @@ const OnlyShowSearchBarSelector = function OnlyShowSearchBarSelector() {
           Show suggestions when there is no text is the Saka search bar
         </span>
       </span>
-      <div className="mdc-deprecated-list-item__meta mdc-switch">
+      <div className="mdc-deprecated-list-item__meta mdc-deprecated-switch">
         <input
           type="checkbox"
           id="basic-switch"
-          className="mdc-switch__native-control"
+          className="mdc-deprecated-switch__native-control"
           aria-label="Suggestions on load"
           checked={checked}
           onChange={handleShowSearchSuggestionsChange}
         />
-        <div className="mdc-switch__background">
-          <div className="mdc-switch__knob" />
+        <div className="mdc-deprecated-switch__background">
+          <div className="mdc-deprecated-switch__knob" />
         </div>
       </div>
     </li>
