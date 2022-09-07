@@ -1,6 +1,7 @@
 import { Component, h } from 'preact';
 import 'material-components-web/dist/material-components-web.css';
-import 'scss/options.scss';
+
+// import 'scss/material-components-web.css';
 
 import OptionsList from './OptionsList/index.jsx';
 import SakaHotkeysList from './SakaHotkeysList/index.jsx';

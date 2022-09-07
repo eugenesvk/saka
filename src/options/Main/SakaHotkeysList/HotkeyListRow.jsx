@@ -1,6 +1,6 @@
 import { h } from 'preact';
 
-import 'material-components-web/dist/material-components-web.css';
+
 
 const HotkeyListRow = function HotkeyListRow({ title, keys }) {
   const hotkeyShortcut = keys.map((key, index, keysArray) => (

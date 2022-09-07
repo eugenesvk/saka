@@ -47,8 +47,14 @@ module.exports = function webpackConfig(env, argv) {
     module: {
       rules: [
         { test:/\.(jsx|js)$/, use:[require.resolve('babel-loader')], exclude:/node_modules/ },
-        { test:/\.css$/i    , use:[require.resolve('style-loader'),require.resolve('css-loader')] },
-        { test:/\.s[ac]ss$/i, use:[require.resolve('style-loader'),require.resolve('css-loader'),
+        { test:/\.css$/i    , use:[require.resolve('style-loader'),{
+          loader:require.resolve('css-loader'), options:{
+            modules: "global",
+          } }] },
+        { test:/\.s[ac]ss$/i, use:[require.resolve('style-loader'),{
+          loader:require.resolve('css-loader'), options:{
+            modules: "global",
+          } },
           // {loader:require.resolve('sass-loader'),
           // options:{ sassOptions: {
           //   includePaths: [path.resolve(__dirname, 'node_modules')],

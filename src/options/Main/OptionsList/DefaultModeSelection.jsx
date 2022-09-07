@@ -1,7 +1,7 @@
 import { h } from 'preact';
 
 // import { Component, h } from 'preact';
-import 'material-components-web/dist/material-components-web.css';
+
 
 const DefaultModeSelection = function DefaultModeSelection({
   mode,
